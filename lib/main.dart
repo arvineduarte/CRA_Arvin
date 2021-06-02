@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         decoration: BoxDecoration(
         image: DecorationImage(
         image: AssetImage("UXDesignImages/LOADING PAGE.png"),
-    fit: BoxFit.cover,
+        fit: BoxFit.cover,// Hello world
     ),
     ),
     ),
