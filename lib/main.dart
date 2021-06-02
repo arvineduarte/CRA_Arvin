@@ -14,11 +14,14 @@ class construction_report extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-              decoration: DecorationImage(image:AssetImage('UXDesignImages/LOADING PAGE.png'),),
-        fit: BoxFit.cover),
-        ),
-      ),
+        decoration: BoxDecoration(
+        image: DecorationImage(
+        image: AssetImage("UXDesignImages/LOADING PAGE.png"),
+    fit: BoxFit.cover,
+    ),
+    ),
+    ),
+    ),
     );
   }
 }
