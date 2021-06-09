@@ -1,5 +1,7 @@
-class projectDetails extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
+class AddProject extends StatelessWidget {
   //---------------Field Function------------------------//
 
   Padding insertBox(String fieldName) {
@@ -87,8 +89,8 @@ class projectDetails extends StatelessWidget {
                 color: Colors.white,
                 child: Text('戻る'),
                 textColor: Colors.black,
-                padding: EdgeInsets.symmetric(vertical:10.0, horizontal: 50.0),
-                onPressed: (){},
+                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+                onPressed: () {},
               ),
               SizedBox(
                 width: 80.0,
@@ -99,8 +101,8 @@ class projectDetails extends StatelessWidget {
                 color: Color(0xFF88ABCB),
                 child: Text('保存'),
                 textColor: Colors.black,
-                padding: EdgeInsets.symmetric(vertical:10.0, horizontal: 50.0),
-                onPressed: (){},
+                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+                onPressed: () {},
               ),
             ],
           ),

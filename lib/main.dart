@@ -1,30 +1,42 @@
+import 'package:construction_report_app/loginPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
+  loginPage();
 }
 
 class MyApp extends StatelessWidget {
-  const construction_report({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Arvin',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-        decoration: BoxDecoration(
-        image: DecorationImage(
-        image: AssetImage("UXDesignImages/LOADING PAGE.png"),
-        fit: BoxFit.cover,// Hello world
-    ),
-    ),
-    ),
-    ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("images/first_page.png"),
+              fit: BoxFit.cover, // Hello world
+            ),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Arvin',
+                  style: TextStyle(
+                    fontFamily: 'Faustina',
+                    fontSize: 90.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey[900],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
-
-

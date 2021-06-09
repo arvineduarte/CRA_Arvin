@@ -24,6 +24,7 @@ flutter:
 
   assets:
   - images/first_page.png
+  - images/blueprint.png
 
   fonts:
     - family: Advent Pro

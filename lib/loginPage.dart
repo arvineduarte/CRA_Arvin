@@ -1,4 +1,8 @@
-class MyApp extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+// ignore: camel_case_types
+class loginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
