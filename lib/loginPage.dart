@@ -1,56 +1,78 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-// ignore: camel_case_types
-class loginPage extends StatelessWidget {
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'ARVIN',
-                style: TextStyle(
-                  fontFamily: 'Advent Pro',
-                  fontSize: 50.0,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(
-                height: 250.0,
-              ),
-              Card(
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
-                  child: ListTile(
-                    leading: Text(
-                      'Login',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: 'Advent Pro',
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  )),
-              Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
-                child: ListTile(
-                  leading: Text(
-                    'Create New Account',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18.0,
-                        fontFamily: 'Advent Pro',
-                        fontWeight: FontWeight.bold),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("images/blueprint.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Arvin',
+                  style: TextStyle(
+                    fontFamily: 'Faustina',
+                    fontSize: 100.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey[900],
                   ),
                 ),
-              )
-            ],
+                SizedBox(
+                  height: 220.0,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.white),
+                    minimumSize: MaterialStateProperty.all(Size(294.0, 50.0)),
+                  ),
+                  onPressed: () {},
+                  child: const Text(
+                    'Login',
+                    style: TextStyle(
+                      fontFamily: 'Advent Pro',
+                      fontSize: 23.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ), // Login button
+                ),
+                SizedBox(
+                  height: 30.0,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.white),
+                    minimumSize: MaterialStateProperty.all(Size(294.0, 50.0)),
+                  ),
+                  onPressed: () {},
+                  child: const Text(
+                    'Create New Account',
+                    style: TextStyle(
+                      fontFamily: 'Advent Pro',
+                      fontSize: 23.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ), // Create New Account Button
+                ),
+              ],
+            ),
           ),
         ),
       ),
