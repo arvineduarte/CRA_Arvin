@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
-import 'AddProject.dart';
 
 void main() {
-  runApp(MaterialApp(
-    title: 'Loading Page',
-    home: MyApp(),
-  ),
+  runApp(
+    MyApp(),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+  const construction_report({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +24,7 @@ class MyApp extends StatelessWidget {
     ),
     ),
     );
-  } //Starting page
+  }
 }
-
-
-
-
 
 
